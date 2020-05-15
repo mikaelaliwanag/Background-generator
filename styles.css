@@ -1,6 +1,6 @@
 body {
 	color: rgba(14, 13, 13, 0.5);
-	background: linear-gradient(to right, #ca10d1, #ffb01e);
+	background: linear-gradient(to right, rgb(221, 72, 253), rgb(255, 176, 30));
 	font-family: "Montserrat", sans-serif;
 	letter-spacing: 0.5em;
 	text-align: center;
@@ -31,4 +31,5 @@ h3 {
 input {
 	width: 50px;
 	height: 25px;
+	margin: auto 5px;
 }
