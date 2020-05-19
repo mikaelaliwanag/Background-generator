@@ -2,7 +2,8 @@ var css = document.querySelector("h3");
 var color1 = document.querySelector(".color1");
 var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
-var randomButton = document.querySelector("button");
+var randomButton = document.getElementById("random-btn");
+var switchButton = document.getElementById("switch-btn");
 
 //sets color values to background using color picker
 function setGradient() {
@@ -29,8 +30,20 @@ function setRandom() {
 	setGradient();
 }
 
+//switches color sides
+function switchColors() {
+	var a = color1.value;
+	var b = color2.value;
+	color1.value = b;
+	color2.value = a;
+
+	setGradient();
+}
+
 color1.addEventListener("input", setGradient);
 
 color2.addEventListener("input", setGradient);
 
 randomButton.addEventListener("click", setRandom);
+
+switchButton.addEventListener("click", switchColors);
