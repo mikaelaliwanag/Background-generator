@@ -14,24 +14,19 @@ function setGradient() {
 	css.textContent = body.style.background;
 }
 
-//creates random rgb values
-function randomRGB() {
-	var r = Math.floor(Math.random() * 256);
-	var g = Math.floor(Math.random() * 256);
-	var b = Math.floor(Math.random() * 256);
-	var rgb = "rgb(" + r + ", " + g + ", " + b + ")";
+//generates random color values
+function genRandomColor() {
+	var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
 
-	return rgb;
+	return randomColor;
 }
 
 //sets random rgb values to background
 function setRandom() {
-	var rgb1 = randomRGB();
-	var rgb2 = randomRGB();
+	color1.value = genRandomColor();
+	color2.value = genRandomColor();
 
-	body.style.background = "linear-gradient(to right, " + rgb1 + ", " + rgb2 + ")";
-
-	css.textContent = body.style.background;
+	setGradient();
 }
 
 color1.addEventListener("input", setGradient);
