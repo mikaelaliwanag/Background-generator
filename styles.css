@@ -5,6 +5,14 @@ body {
 	letter-spacing: 0.5em;
 	text-align: center;
 }
+
+/* color pickers */
+input {
+	width: 50px;
+	height: 25px;
+	margin: auto 5px;
+}
+
 p {
 	font-size: 23px;
 }
@@ -17,19 +25,32 @@ h1 {
 
 h2 {
 	font-size: 1.5rem;
-	margin-top: 4%;
+	margin-top: 3%;
 }
 
+/* css linear gradient value display */
 h3 {
-	color: #3d3838;
-	font-size: 1rem;
+	color: #2b2727;
+	font-size: 15px;
 	border: 1px solid #3d3b3b;
-	padding: 20px;
+	padding: 2rem;
 	margin: auto 10rem;
 }
 
-input {
-	width: 50px;
-	height: 25px;
-	margin: auto 5px;
+/* random button  */
+
+.random-btn {
+	border: 2px solid #eee7e7;
+	border-radius: 5px;
+	background-color: transparent;
+	color: #f7f1f1;
+	padding: 11px 17px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer; 
+}
+
+.random-btn:hover {
+	color: #494141;
+	background-color: rgba(236, 227, 227, 0.5);
 }
