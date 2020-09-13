@@ -1,6 +1,6 @@
 body {
 	color: rgba(14, 13, 13, 0.5);
-	background: linear-gradient(to right, rgb(229, 127, 240), rgb(255, 157, 77));
+	background: linear-gradient(to right, #d93ae4, #f59f2e);
 	font-family: "Montserrat", sans-serif;
 	letter-spacing: 0.5rem;
 	text-align: center;
